@@ -1,0 +1,99 @@
+.opinions {
+  padding: 8rem 1rem;
+}
+.opinions__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1.1667;
+  letter-spacing: 0.03em;
+  text-align: center;
+  font-weight: bold;
+}
+.opinions__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  gap: 2rem;
+  transform-origin: center center;
+}
+.opinions__card {
+  width: 90%;
+  border: 1px solid #1a9cad;
+  align-items: center;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  transform-origin: center center;
+  transition: background-color 0.8s ease, transform 0.8s;
+}
+.opinions__card i {
+  font-size: 5rem;
+  color: #1a9cad;
+  transition: color 0.8s ease;
+}
+.opinions__card__title {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #1a9cad;
+  transition: color 1.3s ease;
+}
+.opinions__card__btn {
+  padding: 1.5rem 2rem;
+  background-color: red;
+  border: 1px solid red;
+  transition: background-color 0.8s ease;
+}
+.opinions__card__btn a {
+  color: #fff;
+  font-size: 1.6rem;
+}
+.opinions__card__btn a i {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.opinions__card:hover,
+.opinions__card:focus {
+  border: 1px solid #1a9cad;
+  box-shadow: 0px 8px 16px 0px #1a9cad;
+}
+.opinions__card:hover i,
+.opinions__card:focus i {
+  color: red;
+}
+.opinions__card:hover h4,
+.opinions__card:focus h4 {
+  color: #fff;
+}
+.opinions__card:hover .opinions__card__btn,
+.opinions__card:focus .opinions__card__btn {
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #1a9cad;
+}
+.opinions__card:hover .opinions__card__btn a,
+.opinions__card:focus .opinions__card__btn a {
+  color: red;
+  border-bottom: 2px solid red;
+  bottom: 25px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .opinions__wrapper {
+    flex-direction: row;
+  }
+  .opinions__card {
+    flex-grow: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .opinions__wrapper {
+    gap: 5rem;
+  }
+}/*# sourceMappingURL=opinions.css.map */
