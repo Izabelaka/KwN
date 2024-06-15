@@ -365,13 +365,14 @@ h1 {
   transform-origin: center center;
 }
 .opinions__card {
+  position: relative;
   width: 90%;
   border: 1px solid #1a9cad;
   align-items: flex-end;
   height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 20px;
   transform-origin: center center;
   transition: background-color 0.8s ease, transform 0.8s;
@@ -380,11 +381,14 @@ h1 {
   background-position: center;
 }
 .opinions__card i {
-  font-size: 7rem;
-  color: #1a9cad;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12rem;
+  color: #fff;
   transition: color 0.8s ease;
   padding-right: 10px;
-  margin: 1rem;
+  opacity: 0.5;
 }
 .opinions__card__title {
   font-size: 1.8rem;
@@ -396,8 +400,9 @@ h1 {
   margin: 10px;
 }
 .opinions__card__text {
-  padding: 0 10px;
+  padding: 0 20px;
   font-size: 13px;
+  padding-top: 3rem;
 }
 .opinions__card__btn {
   padding: 1.5rem 2rem;
@@ -477,6 +482,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .contact__text {
   font-style: normal;
@@ -507,6 +513,9 @@ h1 {
   margin-right: 0.5rem;
   color: #ffb6c1;
 }
+.contact__socials {
+  margin: 2rem;
+}
 
 .footer {
   background-color: #1a9cad;
@@ -534,6 +543,12 @@ h1 {
   .contact__text {
     flex-direction: row;
     gap: 3rem;
+  }
+  .contact__socials {
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #1a9cad;
   }
 }
 .contactme {
