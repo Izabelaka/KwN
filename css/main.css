@@ -505,6 +505,7 @@ h1 {
   font-weight: bold;
   padding: 0.2rem;
   transition: color 0.6s ease;
+  line-height: 1.2;
 }
 .contact__text-link:hover, .contact__text-link:focus {
   color: #ffb6c1;
